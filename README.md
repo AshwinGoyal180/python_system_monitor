@@ -13,6 +13,13 @@
         You can visualise in a way that you think is the best representation of this data.
 [Bonus] Do the installations of Elastic, Kibana, python application in docker.
 
+# This repositry contains :
+
+  1.  Python code of the application.
+  2.  Data model of Elasticsearch (in a text files, under export_files dir).
+  3.  Screenshot of the dashboard in Kibana (under pictures dir)
+  4.  JSON export of dashboard in Kibana (export_files dir)
+  5.  The DockerCompose file for Kibana and ElasticSearch only
 
 
 ## Project Hierarchy
