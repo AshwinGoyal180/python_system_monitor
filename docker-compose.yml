@@ -2,7 +2,7 @@ version: '2.2'
 services:
   python_app:
       build: .
-      command: basch -c "sleep 500 & python system_monitor.py"
+      command: bash -c "sleep 500 & python system_monitor.py"
       volumes:
         - ./src:/src
   es01:
