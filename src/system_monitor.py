@@ -21,6 +21,8 @@ def construct_dataframe(processes):
     df.set_index('pid', inplace=True)
     return df
 
+use_these_keys = ['pid', 'name', 'cpu_percent', 'memory_percent']
+
 # filtering of pandas data frame
 def filterKeys(document):
     return {key: document[key] for key in use_these_keys }
@@ -37,8 +39,9 @@ def doc_generator(df):
             }
 
 if __name__ == "__main__":
+    es_client = Elasticsearch(http_compress=True)
     list_of_Process = list()
-    list_of_Process = get_process_pid(list_of_Process)
+    listOfProcessNames = get_process_pid(list_of_Process)
 
     # creating pandas dataframe
     dataFrame = construct_dataframe(listOfProcessNames)
