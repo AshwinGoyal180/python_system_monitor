@@ -33,13 +33,13 @@ def doc_generator(df):
     df_iter = df.iterrows()
     for index, document in df_iter:
         yield {
-                "_index": 'stats',
+                "_index": 'stats3',
                 "_id" : f"{document['pid'] + index}",
                 "_source": filterKeys(document),
             }
 
 if __name__ == "__main__":
-    es_client = Elasticsearch(http_compress=True)
+    es_client = Elasticsearch([{'host': '192.168.1.104', 'port': 9200}], http_compress=True)
     list_of_Process = list()
     listOfProcessNames = get_process_pid(list_of_Process)
 
