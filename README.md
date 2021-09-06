@@ -31,22 +31,19 @@
 ├── docker-compose.yml
 ├── Dockerfile
 ├── export_files
-│   ├── elastic_export_kibana.txt
-│   ├── elastic_export.txt
+│   ├── elastic_datamodel.json
+│   ├── elastic_index_settings.json
 │   ├── elastic_info.txt
-│   └── export.ndjson
+│   └── kibana_export.ndjson
 ├── pictures
-│   ├── kibana_dashboard_full.png
-│   └── kibana_dashboard_onewidget.png
+│   └── kibana_dash.png
 ├── README.md
 ├── src
-│   ├── __pycache__
-│   ├── stats.ipynb
 │   └── system_monitor.py
 └── volumes
     └── data01
 
-7 directories, 12 files
+6 directories, 10 files
 ```
 
 
